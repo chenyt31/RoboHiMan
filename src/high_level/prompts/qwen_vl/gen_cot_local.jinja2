@@ -1,0 +1,21 @@
+[
+    {"type": "text", "text": "This is a tabletop manipulation scene with a Franka robotic arm. The task is: {{ task_description }}.\n"},
+    
+    {"type": "text", "text": "You are given the following images:\n"},
+    
+    {"type": "text", "text": "- Start frame views:"},
+    {% for path in start_frame_images %}
+    {"type": "image", "image": "file:///{{ path }}"},
+    {% endfor %}
+    
+    {"type": "text", "text": "- End frame views [just for understanding]:"},
+    {% for path in end_frame_images %}
+    {"type": "image", "image": "file:///{{ path }}"},
+    {% endfor %}
+    
+    {"type": "text", "text": "The sub-task performed to move from the start frame towards the end frame is:\n<sub_task>{{ sub_task }}</sub_task>\n"},
+    
+    {"type": "text", "text": "Provide reasoning for why this sub-task should be performed next, based **only on the start frame and task instruction**. Do NOT use information from the end frame in your reasoning.\n"},
+    
+    {"type": "text", "text": "Output in the following XML format:\n<reasoning>Describe the scene first, then explain why this sub-task is chosen based on the start frame and task instruction only.</reasoning>\n"}
+]

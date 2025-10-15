@@ -1,0 +1,12 @@
+This is a tabletop manipulation scene with a Franka robotic arm. 
+The task is: {{ task_description }}.
+
+You are given {{ image_paths|length }} different views of the same scene:
+{% for _ in image_paths -%}
+<image>{% if not loop.last %}, {% endif %}{% endfor %}
+
+Based on the task and the current scene, determine what the robot should do next (the next sub-task). 
+
+Output in the following XML format:
+<reasoning>natural language description of reasoning</reasoning>
+<sub_task>natural language description of the next sub-task</sub_task>

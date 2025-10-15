@@ -1,0 +1,18 @@
+numpy
+scipy
+einops
+pyrender
+transformers
+omegaconf
+natsort
+cffi
+pandas
+tensorflow
+pyquaternion
+matplotlib
+bitsandbytes==0.38.1
+transforms3d
+clip@ git+https://github.com/openai/CLIP.git
+
+[xformers]
+xformers@ git+https://github.com/facebookresearch/xformers.git@main#egg=xformers

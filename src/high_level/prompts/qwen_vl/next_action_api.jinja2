@@ -1,0 +1,8 @@
+[
+    {"type": "text", "text": "This is a tabletop manipulation scene with a Franka robotic arm. The task is: {{ task_description }}.\nYou are given 3 different views of the same scene:\n"},
+    {"type": "image_url", "image_url": {"url": "{{ image_paths[0] }}" }},
+    {"type": "image_url", "image_url": {"url": "{{ image_paths[1] }}" }},
+    {"type": "image_url", "image_url": {"url": "{{ image_paths[2] }}" }},
+    {"type": "text", "text": "Based on the task and the current scene, determine what the robot should do next (the next sub-task). Then, identify the location (patch x,y) where the robot arm should act in each view to perform this sub-task.\n"},
+    {"type": "text", "text": "Output in the following XML format:\n<sub_task>natural language description of the next sub-task</sub_task>\n<patch x=\"x\" y=\"y\">top view</patch>\n<patch x=\"x\" y=\"y\">front view</patch>\n<patch x=\"x\" y=\"y\">right view</patch>\n"}
+]

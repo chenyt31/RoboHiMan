@@ -1,0 +1,12 @@
+[
+    {"type": "text", "text": "This is a tabletop manipulation scene with a Franka robotic arm.\n The task is: {{ task_description }}.\n"},
+    
+    {"type": "text", "text": "You are given {{ image_paths|length }} different views of the same scene:\n"},
+    {% for path in image_paths %}
+    {"type": "image", "image": "file:///{{ path }}"}{% if not loop.last %},{% endif %}
+    {% endfor %},
+    
+    {"type": "text", "text": "Based on the task and the current scene, determine what the robot should do next (the next sub-task).\n"},
+    
+    {"type": "text", "text": "Output in the following XML format:\n<reasoning>natural language description of reasoning</reasoning>\n<sub_task>natural language description of the next sub-task</sub_task>"}
+]

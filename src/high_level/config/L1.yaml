@@ -1,0 +1,16 @@
+# high_level_cfg.yaml
+
+# VLM Runner Settings
+mode: "api"
+vlm_ckpt_dir: "HiMan_data/Qwen_Ckpt/Less_L1_Base"
+ip: "127.0.0.1"
+port: 9001
+
+# Prompt Manager Agent
+prompt_dir: "src/high_level/prompts"
+prompt_model_name: "qwen_vl"
+
+# Inference Settings
+vlm_device: "cuda:1"
+tmp_dir: "Less_L1_Base/high_level_atomic"
+img_size: 224

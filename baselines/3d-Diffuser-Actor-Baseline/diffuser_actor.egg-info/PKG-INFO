@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: diffuser_actor
+Version: 0.1
+Summary: 3D Diffuser Actor
+Home-page: https://nickgkan.github.io/
+Author: Nikolaos Gkanatsios
+Author-email: ngkanats@cs.cmu.edu
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: torchvision
+Requires-Dist: diffusers
+Requires-Dist: dgl
+Requires-Dist: flash_attn
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

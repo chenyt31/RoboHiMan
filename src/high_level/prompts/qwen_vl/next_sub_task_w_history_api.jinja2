@@ -1,0 +1,19 @@
+[
+    {"type": "text", "text": "This is a tabletop manipulation scene with a Franka robotic arm.\n The task is: {{ task_description }}.\n"},
+    
+    {"type": "text", "text": "You are given {{ image_paths|length }} different views of the same scene:\n"},
+    {% for path in image_paths %}
+    {"type": "image_url", "image_url": { "url": "{{ path }}" } } {% if not loop.last %},{% endif %}
+    {% endfor %},
+    
+    {"type": "text", "text": "Before reaching the current frame, the following sub-tasks have been performed or are in progress:"},
+    {% if pre_sub_tasks %}
+        {"type": "text", "text": "{{ pre_sub_tasks | join(', ') }}"},
+    {% else %}
+        {"type": "text", "text": "No history"},
+    {% endif %}
+
+    {"type": "text", "text": "Based on the task, the current scene, and the sub-tasks that have been performed or are in progress, determine what the robot should do next (the next sub-task)."},
+    
+    {"type": "text", "text": "Output in the following XML format:\n<reasoning>natural language description of reasoning</reasoning>\n<sub_task>natural language description of the next sub-task</sub_task>"}
+]
