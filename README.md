@@ -38,7 +38,7 @@ See [INSTALL.md](INSTALL.md) for detailed setup instructions.
 - [RVT-Baseline](baselines/RVT-Baseline/README.md)  
 
 ## 🧠 VLM-Based Planner
-See [HIGH_LEVEL.md](INSTALL.md) for detailed setup instructions.
+See [HIGH_LEVEL.md](HIGH_LEVEL.md) for detailed setup instructions.
 
 ## 🧾 Citation
 
