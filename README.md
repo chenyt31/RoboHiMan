@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://chenyt31.github.io/robo-himan.github.io/">🌐 Website</a> •
+  <a href="https://arxiv.org/abs/2510.13149">📄 Paper</a> •
   <a href="#installation">🛠️ Installation</a> •
   <a href="#baselines">📊 Baselines</a> •
   <a href="#citation">🧾 Citation</a>
@@ -47,10 +48,10 @@ See [HIGH_LEVEL.md](HIGH_LEVEL.md) for detailed setup instructions.
 If you find this work useful, please consider citing:
 
 ```bibtex
-@inproceedings{anonymous2025robohiman,
+@article{chen2025robohimanhierarchicalevaluationparadigm,
   title={RoboHiMan: A Hierarchical Evaluation Paradigm for Compositional Generalization in Long-Horizon Manipulation},
-  author={Anonymous},
-  booktitle={Under Review},
+  author={Yangtao Chen and Zixuan Chen and Nga Teng Chan and Junting Chen and Junhui Yin and Jieqi Shi and Yang Gao and Yong-Lu Li and Jing Huo},
+  journal={arXiv preprint arXiv:2510.13149},
   year={2025}
 }
 ```
