@@ -48,9 +48,9 @@ See [HIGH_LEVEL.md](HIGH_LEVEL.md) for detailed setup instructions.
 If you find this work useful, please consider citing:
 
 ```bibtex
-@article{chen2025robohimanhierarchicalevaluationparadigm,
-  title={RoboHiMan: A Hierarchical Evaluation Paradigm for Compositional Generalization in Long-Horizon Manipulation},
-  author={Yangtao Chen and Zixuan Chen and Nga Teng Chan and Junting Chen and Junhui Yin and Jieqi Shi and Yang Gao and Yong-Lu Li and Jing Huo},
+@article{chen2025robohiman,
+  title={RoboHiMan: A hierarchical evaluation paradigm for compositional generalization in long-horizon manipulation},
+  author={Chen, Yangtao and Chen, Zixuan and Chan, Nga Teng and Chen, Junting and Yin, Junhui and Shi, Jieqi and Gao, Yang and Li, Yong-Lu and Huo, Jing},
   journal={arXiv preprint arXiv:2510.13149},
   year={2025}
 }
